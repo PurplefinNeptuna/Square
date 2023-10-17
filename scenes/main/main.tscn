@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cag7hs5h1rabe"]
+
+[ext_resource type="Script" path="res://scenes/main/main.gd" id="1_om4cb"]
+[ext_resource type="PackedScene" uid="uid://t70oufnd1op6" path="res://scenes/level/level.tscn" id="1_pabcu"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_om4cb")
+
+[node name="Level" parent="." instance=ExtResource("1_pabcu")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+position_smoothing_enabled = true
+
+[node name="ActorManager" type="Node" parent="."]
